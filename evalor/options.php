@@ -10,43 +10,43 @@
         ?>
         <table class="form-table">
             <tr valign="top">
-                <th scope="row"><label for="wwk-shop-id"><?php _e('Webwinkel ID'); ?></label></th>
+                <th scope="row"><label for="wwk-shop-id"><?php _e('ID de la tienda online'); ?></label></th>
                 <td><input name="webwinkelkeur_wwk_shop_id" type="text" id="wwk-shop-id" value="<?php echo esc_html($config['wwk_shop_id']); ?>" class="regular-text" /></td>
             </tr>
             <tr valign="top">
-                <th scope="row"><label for="wwk-api-key"><?php _e('API key'); ?></label></th>
+                <th scope="row"><label for="wwk-api-key"><?php _e('Clave API'); ?></label></th>
                 <td><input name="webwinkelkeur_wwk_api_key" type="text" id="wwk-api-key" value="<?php echo esc_html($config['wwk_api_key']); ?>" class="regular-text" />
                 <p class="description">
-                <?php _e('Deze gegevens vindt u na het inloggen op <a href="https://www.evalor.es/tienda/" target="_blank">eValor.es</a>.<br />Klik op \'Keurmerk plaatsen\'. De gegevens zijn vervolgens onderaan deze pagina te vinden.'); ?>
+                <?php _e('Estos datos los encontrará al ingresar en <a href="https://www.evalor.es/tienda/" target="_blank">eValor.es</a>.<br />Haz click en "Colocar sello". Encontrará estos datos en la parte inferior de la página.'); ?>
                 </p>
                 </td>
             </tr>
             <tr valign="top">
-                <th scope="row"><label for="webwinkelkeur-sidebar"><?php _e('Sidebar weergeven'); ?></label></th>
+                <th scope="row"><label for="webwinkelkeur-sidebar"><?php _e('Mostrar sidebar'); ?></label></th>
                 <td>
                     <label>
                         <input type="checkbox" id="webwinkelkeur-sidebar" name="webwinkelkeur_sidebar" value="1" <?php if($config['sidebar']) echo 'checked'; ?> />
-                        <?php _e('Ja, voeg de eValor Sidebar toe aan mijn website.'); ?>
+                        <?php _e('Si, añadir el sidebar de eValor a mi web.'); ?>
                     </label>
                 </td>
             </tr> 
             <tr valign="top">
-                <th scope="row"><?php _e('Sidebar positie'); ?></th>
+                <th scope="row"><?php _e('Posición sidebar'); ?></th>
                 <td>
                     <fieldset>
                         <label>
                             <input type="radio" name="webwinkelkeur_sidebar_position" value="left" <?php if($config['sidebar_position'] == 'left') echo 'checked'; ?> />
-                            <?php _e('Links'); ?>
+                            <?php _e('Izquierda'); ?>
                         </label><br>
                         <label>
                             <input type="radio" name="webwinkelkeur_sidebar_position" value="right" <?php if($config['sidebar_position'] == 'right') echo 'checked'; ?> />
-                            <?php _e('Rechts'); ?>
+                            <?php _e('Derecha'); ?>
                         </label>
                     </fieldset>
                 </td>
             </tr> 
             <tr valign="top">
-                <th scope="row"><label for="webwinkelkeur-sidebar-top"><?php _e('Sidebar hoogte'); ?></label></th>
+                <th scope="row"><label for="webwinkelkeur-sidebar-top"><?php _e('Altura sidebar'); ?></label></th>
                 <td><input name="webwinkelkeur_sidebar_top" type="text" id="webwinkelkeur-sidebar-top" value="<?php echo esc_html($config['sidebar_top']); ?>" class="small-text" />
                 <p class="description">
                 <?php _e('Aantal pixels vanaf de bovenkant.'); ?>
@@ -54,7 +54,7 @@
                 </td>
             </tr>
             <tr valign="top">
-                <th scope="row"><?php _e('Uitnodigingen versturen'); ?></th>
+                <th scope="row"><?php _e('Enviar invitaciones'); ?></th>
                 <td>
                     <fieldset>
                         <label>
@@ -71,16 +71,16 @@
                         </label>
                     </fieldset>
                     <?php if(!$this->woocommerce): ?>
-                    <p class="description"><?php _e('Installeer en activeer WooCommerce om deze functionaliteit te kunnen gebruiken.'); ?></p>
+                    <p class="description"><?php _e('Instale y active WooCommerce para poder utilizar esta función.'); ?></p>
                     <?php endif; ?>
-                    <p class="description"><?php _e('Deze functionaliteit is alleen beschikbaar voor Plus-leden.'); ?></p>
+                    <p class="description"><?php _e('Esta función solo está disponible para socios PLUS.'); ?></p>
                 </td>
             </tr> 
             <tr valign="top">
-                <th scope="row"><label for="webwinkelkeur-invite-delay"><?php _e('Wachttijd voor uitnodiging'); ?></label></th>
+                <th scope="row"><label for="webwinkelkeur-invite-delay"><?php _e('Plazo para la invitación'); ?></label></th>
                 <td><input name="webwinkelkeur_invite_delay" type="text" id="webwinkelkeur-invite-delay" value="<?php echo esc_html($config['invite_delay']); ?>" class="small-text" />
                 <p class="description">
-                <?php _e('De uitnodiging wordt verstuurd nadat het opgegeven aantal dagen is verstreken na het verzenden van de bestelling.'); ?>
+                <?php _e('La invitación se envía una vez hayan pasado el número de días indicados después de enviar el pedido.'); ?>
                 </p>
                 </td>
             </tr>

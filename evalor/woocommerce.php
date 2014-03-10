@@ -46,7 +46,7 @@ class WebwinkelKeurWooCommerce {
                 'response'  => $e->getMessage(),
                 'time'      => time(),
             ));
-            $this->insert_comment($order_id, __('WebwinkelKeur uitnodiging kon niet worden verstuurd.') . ' ' . $e->getMessage());
+            $this->insert_comment($order_id, __('La invitación de la tienda online no ha podido ser enviada.') . ' ' . $e->getMessage());
         }
     }
 
