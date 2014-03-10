@@ -1,7 +1,7 @@
 <form method="POST" action="">
     <div class="wrap">
         <?php screen_icon(); ?>
-        <h2><?php _e('WebwinkelKeur'); ?></h2>
+        <h2><?php _e('eValor'); ?></h2>
         <?php
         if($updated)
             echo "<div class=updated><p>", _e('Uw wijzigingen zijn opgeslagen.'), "</p></div>";
@@ -17,7 +17,7 @@
                 <th scope="row"><label for="wwk-api-key"><?php _e('API key'); ?></label></th>
                 <td><input name="webwinkelkeur_wwk_api_key" type="text" id="wwk-api-key" value="<?php echo esc_html($config['wwk_api_key']); ?>" class="regular-text" />
                 <p class="description">
-                <?php _e('Deze gegevens vindt u na het inloggen op <a href="https://www.webwinkelkeur.nl/webwinkel/" target="_blank">WebwinkelKeur.nl</a>.<br />Klik op \'Keurmerk plaatsen\'. De gegevens zijn vervolgens onderaan deze pagina te vinden.'); ?>
+                <?php _e('Deze gegevens vindt u na het inloggen op <a href="https://www.evalor.es/tienda/" target="_blank">eValor.es</a>.<br />Klik op \'Keurmerk plaatsen\'. De gegevens zijn vervolgens onderaan deze pagina te vinden.'); ?>
                 </p>
                 </td>
             </tr>
@@ -26,7 +26,7 @@
                 <td>
                     <label>
                         <input type="checkbox" id="webwinkelkeur-sidebar" name="webwinkelkeur_sidebar" value="1" <?php if($config['sidebar']) echo 'checked'; ?> />
-                        <?php _e('Ja, voeg de WebwinkelKeur Sidebar toe aan mijn website.'); ?>
+                        <?php _e('Ja, voeg de eValor Sidebar toe aan mijn website.'); ?>
                     </label>
                 </td>
             </tr> 

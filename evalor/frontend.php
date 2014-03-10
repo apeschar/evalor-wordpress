@@ -21,13 +21,13 @@ class WebwinkelKeurFrontend {
            && !get_option('webwinkelkeur_tooltip')
            && !get_option('webwinkelkeur_javascript')
         ) {
-            echo '<!-- WebwinkelKeur: sidebar niet geactiveerd -->';
+            echo '<!-- eValor: sidebar niet geactiveerd -->';
             return;
         }
 
         $wwk_shop_id = (int) get_option('webwinkelkeur_wwk_shop_id');
         if(!$wwk_shop_id) {
-            echo '<!-- WebwinkelKeur: webwinkel ID niet geldig of niet opgegeven -->';
+            echo '<!-- eValor: webwinkel ID niet geldig of niet opgegeven -->';
             return;
         }
 
