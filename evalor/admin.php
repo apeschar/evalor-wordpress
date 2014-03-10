@@ -61,12 +61,12 @@ class WebwinkelKeurAdmin {
                 $config[$field_name] = (string) @$_POST['webwinkelkeur_' . $field_name];
 
             if(empty($config['wwk_shop_id']))
-                $errors[] = __('Uw webwinkel ID is verplicht.');
+                $errors[] = __('Su ID de tienda es obligatorio.');
             elseif(!ctype_digit($config['wwk_shop_id']))
-                $errors[] = __('Uw webwinkel ID kan alleen cijfers bevatten.');
+                $errors[] = __('Su ID de tienda solo puede contener números.');
 
             if($config['invite'] && !$config['wwk_api_key'])
-                $errors[] = __('Om uitnodigingen te versturen is uw API key verplicht.');
+                $errors[] = __('Para enviar invitaciones es obligatoria su clave API.');
 
             if(!$errors) {
                 foreach($config as $name => $value)
@@ -91,7 +91,7 @@ class WebwinkelKeurAdmin {
         foreach($errors as $error) {
             ?>
             <div class="error"><p>
-                <?php _e('Bij het versturen van de eValor uitnodiging is een fout opgetreden:') ?><br/>
+                <?php _e('Ha habido un error al enviar la invitación de eValor.') ?><br/>
                 <?php echo esc_html($error->response); ?>
             </p></div>
             <?php
