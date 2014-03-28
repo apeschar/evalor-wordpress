@@ -26,7 +26,7 @@
                 <td>
                     <label>
                         <input type="checkbox" id="webwinkelkeur-sidebar" name="webwinkelkeur_sidebar" value="1" <?php if($config['sidebar']) echo 'checked'; ?> />
-                        <?php _e('Si, añadir el sidebar de eValor a mi web.'); ?>
+                        <?php _e('Sí, añadir el sidebar de eValor a mi web.'); ?>
                     </label>
                 </td>
             </tr> 
@@ -89,7 +89,7 @@
                 <td>
                     <label>
                         <input type="checkbox" id="webwinkelkeur-tooltip" name="webwinkelkeur_tooltip" value="1" <?php if($config['tooltip']) echo 'checked'; ?> />
-                        <?php _e('Si, añadir el logo desplegable eValor a mi sitio web.'); ?>
+                        <?php _e('Sí, añadir el logo desplegable eValor a mi sitio web.'); ?>
                     </label>
                 </td>
             </tr> 
@@ -98,7 +98,7 @@
                 <td>
                     <label>
                         <input type="checkbox" id="webwinkelkeur-javascript" name="webwinkelkeur_javascript" value="1" <?php if($config['javascript']) echo 'checked'; ?> />
-                        <?php _e('Si, añadir el JavaScript de eValor a mi sitio web.'); ?>
+                        <?php _e('Sí, añadir el JavaScript de eValor a mi sitio web.'); ?>
                     </label>
                 </td>
             </tr> 
