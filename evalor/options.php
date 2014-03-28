@@ -4,7 +4,7 @@
         <h2><?php _e('eValor'); ?></h2>
         <?php
         if($updated)
-            echo "<div class=updated><p>", _e('Uw wijzigingen zijn opgeslagen.'), "</p></div>";
+            echo "<div class=updated><p>", _e('Sus cambios han sido guardados.'), "</p></div>";
         foreach($errors as $error)
             echo "<div class=error><p>", $error, "</p></div>";
         ?>
@@ -49,7 +49,7 @@
                 <th scope="row"><label for="webwinkelkeur-sidebar-top"><?php _e('Altura sidebar'); ?></label></th>
                 <td><input name="webwinkelkeur_sidebar_top" type="text" id="webwinkelkeur-sidebar-top" value="<?php echo esc_html($config['sidebar_top']); ?>" class="small-text" />
                 <p class="description">
-                <?php _e('Aantal pixels vanaf de bovenkant.'); ?>
+                <?php _e('Número de pixeles desde arriba.'); ?>
                 </p>
                 </td>
             </tr>
@@ -59,15 +59,15 @@
                     <fieldset>
                         <label>
                             <input type="radio" name="webwinkelkeur_invite" value="1" <?php if($config['invite'] == 1) echo 'checked'; ?> />
-                            Ja, na elke bestelling.
+                            Sí, después de cada pedido.
                         </label><br>
                         <label>
                             <input type="radio" name="webwinkelkeur_invite" value="2" <?php if($config['invite'] == 2) echo 'checked'; ?> />
-                            Ja, alleen bij de eerste bestelling.
+                            Sí, sólo con el primer pedido.
                         </label><br>
                         <label>
                             <input type="radio" name="webwinkelkeur_invite" value="0" <?php if(!$config['invite']) echo 'checked'; ?> />
-                            Nee, geen uitnodigingen versturen.
+                            No, no enviar invitaciones.
                         </label>
                     </fieldset>
                     <?php if(!$this->woocommerce): ?>
@@ -85,20 +85,20 @@
                 </td>
             </tr>
             <tr valign="top">
-                <th scope="row"><label for="webwinkelkeur-tooltip"><?php _e('Tooltip weergeven'); ?></label></th>
+                <th scope="row"><label for="webwinkelkeur-tooltip"><?php _e('Mostrar logo desplegable'); ?></label></th>
                 <td>
                     <label>
                         <input type="checkbox" id="webwinkelkeur-tooltip" name="webwinkelkeur_tooltip" value="1" <?php if($config['tooltip']) echo 'checked'; ?> />
-                        <?php _e('Ja, voeg de WebwinkelKeur Tooltip toe aan mijn website.'); ?>
+                        <?php _e('Si, añadir el logo desplegable eValor a mi sitio web.'); ?>
                     </label>
                 </td>
             </tr> 
             <tr valign="top">
-                <th scope="row"><label for="webwinkelkeur-javascript"><?php _e('JavaScript-integratie'); ?></label></th>
+                <th scope="row"><label for="webwinkelkeur-javascript"><?php _e('Integración JavaScript'); ?></label></th>
                 <td>
                     <label>
                         <input type="checkbox" id="webwinkelkeur-javascript" name="webwinkelkeur_javascript" value="1" <?php if($config['javascript']) echo 'checked'; ?> />
-                        <?php _e('Ja, voeg de WebwinkelKeur JavaScript toe aan mijn website.'); ?>
+                        <?php _e('Si, añadir el JavaScript de eValor a mi sitio web.'); ?>
                     </label>
                 </td>
             </tr> 
