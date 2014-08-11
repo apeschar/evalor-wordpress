@@ -11,14 +11,14 @@ root=$PWD
 rm -rf tmp
 mkdir -p tmp/package tmp/svn
 
-svn co http://plugins.svn.wordpress.org/webwinkelkeur tmp/svn
+svn co http://plugins.svn.wordpress.org/evalor tmp/svn
 cd tmp/svn
 svn rm --force trunk
 mkdir trunk
 
 cd $root/tmp/package
-unzip $root/dist/wordpress-webwinkelkeur.zip
-rsync -a webwinkelkeur/ $root/tmp/svn/trunk/
+unzip $root/dist/wordpress-evalor.zip
+rsync -a evalor/ $root/tmp/svn/trunk/
 
 cd $root/tmp/svn
 svn add --force trunk
