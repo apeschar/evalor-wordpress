@@ -36,12 +36,6 @@ class WebwinkelKeurFrontend {
             return;
         }
 
-        $wwk_shop_id = (int) get_option('webwinkelkeur_wwk_shop_id');
-        if(!$wwk_shop_id) {
-            echo '<!-- eValor: webwinkel ID niet geldig of niet opgegeven -->';
-            return;
-        }
-
         $settings = array(
             '_webwinkelkeur_id' => $this->wwk_shop_id,
             '_webwinkelkeur_sidebar' => !!get_option('webwinkelkeur_sidebar'),
