@@ -2,8 +2,8 @@ Vagrant.configure("2") do |config|
     config.vm.box = 'precise64'
     config.vm.box_url = 'http://files.vagrantup.com/precise64.box'
     config.vm.network 'private_network', ip: '192.168.50.5'
-    config.vm.synced_folder 'webwinkelkeur',
-        '/var/www/wp-content/plugins/webwinkelkeur',
+    config.vm.synced_folder 'evalor',
+        '/var/www/wp-content/plugins/evalor',
         type: 'rsync', rsync__exclude: '.*.swp'
     config.vm.synced_folder 'webwinkelkeur',
         '/var/www/wp40/wp-content/plugins/webwinkelkeur',
