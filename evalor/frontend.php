@@ -61,7 +61,7 @@ class WebwinkelKeurFrontend {
         if(!@is_writable($tmp_dir))
             return;
 
-        $url = sprintf('http://www.webwinkelkeur.nl/shop_rich_snippet.php?id=%s',
+        $url = sprintf('http://www.evalor.es/shop_rich_snippet.php?id=%s',
                        (int) $this->wwk_shop_id);
 
         $cache_file = $tmp_dir . DIRECTORY_SEPARATOR . 'WEBWINKELKEUR_'
