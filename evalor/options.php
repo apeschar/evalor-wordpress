@@ -111,7 +111,7 @@
                     </label>
                     <p class="description">
                         Así Google podrá mostrar tu puntuación en los resultados de búsqueda.
-                        <!-- TODO: gebruik op eigen risico -->
+                        Uso bajo su propia responsabilidad.
                         <a target="_blank" href="https://support.google.com/webmasters/answer/99170?hl=es">Más información.</a>
                     </p>
                 </td>
